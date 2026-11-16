@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satyam Chabba | CSE (AI) & Machine Learning Engineer</title>
+  <meta name="description" content="Portfolio of Satyam Chabba - 18 y/o AI & Computer Science Undergrad at Shoolini University. Microsoft Certified in Azure & Azure AI, Data Analytics Intern, Predictive Modeling Specialist.">
+  <meta name="keywords" content="Satyam Chabba, Shoolini University, CSE AI, Microsoft Certified, Azure AI Fundamentals, Azure Fundamentals, Thiranex Data Analytics, Machine Learning, Predictive Modeling, Car Price Prediction, Heart Disease Classifier">
+  <meta name="author" content="Satyam Chabba">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  
+  <!-- Google Fonts: Space Grotesk & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons for polished tech badges -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="cyber-theme">
+  <!-- Glowing Cursor Follower -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Interactive Neural Canvas Background -->
+  <canvas id="neuralCanvas"></canvas>
+  <div class="ambient-glow glow-top-left"></div>
+  <div class="ambient-glow glow-bottom-right"></div>
+  <div class="cyber-grid-overlay"></div>
+
+  <!-- Audio feedback indicator -->
+  <div class="sound-toast" id="soundToast">Sound Synthesizer Active</div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper">
+    <nav class="navbar container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">SC</span>
+        <span class="logo-bracket">/&gt;</span>
+        <span class="pulse-dot"></span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-item"><span class="nav-num">01.</span> About</a>
+        <a href="#projects" class="nav-item"><span class="nav-num">02.</span> Projects</a>
+        <a href="#simulators" class="nav-item"><span class="nav-num">03.</span> ML Lab</a>
+        <a href="#certificates" class="nav-item"><span class="nav-num">04.</span> Certifications</a>
+        <a href="#skills" class="nav-item"><span class="nav-num">05.</span> Skills</a>
+        <a href="#terminal" class="nav-item"><span class="nav-num">06.</span> Terminal</a>
+        <a href="#contact" class="nav-item"><span class="nav-num">07.</span> Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <!-- Web Audio Toggle -->
+        <button id="soundToggle" class="sound-btn" title="Toggle Synthesized Cyber Sounds" aria-label="Toggle Sound">
+          <i class="fa-solid fa-volume-xmark" id="soundIcon"></i>
+          <span class="sound-status-text">Audio</span>
+        </button>
+        
+        <a href="#contact" class="btn btn-cyber-sm">
+          <span>Let's Talk</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero-section container">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="beacon"></span>
+          <span class="badge-text">18 Y/O • CSE (AI) @ SHOOLINI UNIVERSITY</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text glitch-text" data-text="Satyam Chabba">Satyam Chabba</span>
+        </h1>
+
+        <div class="hero-typing-box">
+          <span class="terminal-prefix">&gt;</span>
+          <span class="typing-text" id="typingText"></span>
+          <span class="typing-cursor">|</span>
+        </div>
+
+        <p class="hero-description">
+          Bridging mathematical foundations with applied Machine Learning. Specializing in 
+          <strong>predictive modeling</strong>, <strong>data pipelines</strong>, and <strong>intelligent algorithmic solutions</strong>. 
+          Dual <strong>Microsoft Certified</strong> in Azure & Azure AI, with industry experience in <strong>Data Analytics</strong>.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#certificates" class="btn btn-cyber-primary">
+            <i class="fa-solid fa-certificate"></i>
+            <span>View Verified Credentials</span>
+          </a>
+          <a href="#simulators" class="btn btn-cyber-secondary">
+            <i class="fa-solid fa-microchip"></i>
+            <span>Test Live ML Simulators</span>
+          </a>
+          <a href="https://github.com/satyamgarg132008-cyber" target="_blank" rel="noopener noreferrer" class="btn btn-cyber-icon" title="GitHub Profile">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/satyam-chabba-8b3787396" target="_blank" rel="noopener noreferrer" class="btn btn-cyber-icon" title="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+
+        <!-- Quick Stats Strip -->
+        <div class="quick-stats-strip">
+          <div class="stat-pill">
+            <span class="stat-num" data-target="18">0</span>
+            <span class="stat-label">Years of Age</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-pill">
+            <span class="stat-num" data-target="3">0</span><span class="stat-plus">x</span>
+            <span class="stat-label">Industry Accreditations</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-pill">
+            <span class="stat-num" data-target="95">0</span><span class="stat-plus">%+</span>
+            <span class="stat-label">Model Accuracy Benchmarks</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HERO VISUAL: 3D HOLOGRAPHIC NEURAL CARD -->
+      <div class="hero-visual">
+        <div class="holo-card-wrapper" id="holoCard">
+          <div class="holo-card">
+            <div class="holo-header">
+              <div class="card-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="holo-tag">SATYAM_NEURAL_KERNEL v2.5</div>
+              <div class="holo-signal"><i class="fa-solid fa-wifi"></i> 99.8%</div>
+            </div>
+
+            <div class="holo-body">
+              <div class="model-telemetry">
+                <div class="telemetry-item">
+                  <span class="t-label">CURRENT_STATE:</span>
+                  <span class="t-val text-cyan">ACTIVE_INFERENCE</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="t-label">ACADEMIC_BASE:</span>
+                  <span class="t-val text-purple">Shoolini University</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="t-label">SPECIALIZATION:</span>
+                  <span class="t-val text-green">B.Tech CSE (Artificial Intelligence)</span>
+                </div>
+                <div class="telemetry-item">
+                  <span class="t-label">ACCREDITATION:</span>
+                  <span class="t-val text-cyan">Microsoft Certified (Azure & AI)</span>
+                </div>
+              </div>
+
+              <!-- Animated Mini Neural Graph Graphic -->
+              <div class="neural-viz-container">
+                <svg class="neural-svg" viewBox="0 0 300 120">
+                  <!-- Synapse Lines -->
+                  <line x1="30" y1="30" x2="150" y2="20" class="synapse-line" />
+                  <line x1="30" y1="30" x2="150" y2="60" class="synapse-line" />
+                  <line x1="30" y1="30" x2="150" y2="100" class="synapse-line" />
+                  <line x1="30" y1="60" x2="150" y2="20" class="synapse-line" />
+                  <line x1="30" y1="60" x2="150" y2="60" class="synapse-line" />
+                  <line x1="30" y1="60" x2="150" y2="100" class="synapse-line" />
+                  <line x1="30" y1="90" x2="150" y2="20" class="synapse-line" />
+                  <line x1="30" y1="90" x2="150" y2="60" class="synapse-line" />
+                  <line x1="30" y1="90" x2="150" y2="100" class="synapse-line" />
+                  
+                  <line x1="150" y1="20" x2="270" y2="40" class="synapse-line active-pulse" />
+                  <line x1="150" y1="60" x2="270" y2="40" class="synapse-line" />
+                  <line x1="150" y1="100" x2="270" y2="80" class="synapse-line active-pulse" />
+                  <line x1="150" y1="60" x2="270" y2="80" class="synapse-line" />
+
+                  <!-- Input Nodes -->
+                  <circle cx="30" cy="30" r="7" class="node-circle input-node" />
+                  <circle cx="30" cy="60" r="7" class="node-circle input-node" />
+                  <circle cx="30" cy="90" r="7" class="node-circle input-node" />
+
+                  <!-- Hidden Layer Nodes -->
+                  <circle cx="150" cy="20" r="8" class="node-circle hidden-node" />
+                  <circle cx="150" cy="60" r="8" class="node-circle hidden-node active-node" />
+                  <circle cx="150" cy="100" r="8" class="node-circle hidden-node" />
+
+                  <!-- Output Nodes -->
+                  <circle cx="270" cy="40" r="9" class="node-circle output-node active-output" />
+                  <circle cx="270" cy="80" r="9" class="node-circle output-node" />
+                </svg>
+                <div class="neural-caption">Realtime Synaptic Weights & Activations</div>
+              </div>
+
+              <!-- Floating Tech Badges -->
+              <div class="holo-chips">
+                <span class="chip"><i class="fa-brands fa-microsoft"></i> Azure AI</span>
+                <span class="chip"><i class="fa-brands fa-python"></i> Python</span>
+                <span class="chip"><i class="fa-solid fa-brain"></i> Scikit-Learn</span>
+                <span class="chip"><i class="fa-solid fa-chart-line"></i> Data Analytics</span>
+              </div>
+            </div>
+
+            <div class="holo-footer">
+              <span class="code-comment">// Verified credentials</span>
+              <span class="holo-status-ok"><i class="fa-solid fa-circle-check"></i> MS AZURE & AI CERTIFIED</span>
+            </div>
+          </div>
+          <!-- Card Backdrop Glow -->
+          <div class="card-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about-section container section-padding">
+      <div class="section-header">
+        <span class="section-tag">01 // PROFILE SPECS</span>
+        <h2 class="section-title">Architecting <span class="gradient-text">Predictive Intelligence</span></h2>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text-card cyber-panel">
+          <div class="panel-header">
+            <span class="terminal-dot"></span>
+            <span class="panel-title">SYSTEM_BIO.md</span>
+          </div>
+          <div class="panel-content">
+            <p>
+              I am an <strong>18-year-old Computer Science & Engineering (Artificial Intelligence)</strong> undergraduate at 
+              <span class="highlight-text">Shoolini University</span>. Rather than viewing machine learning as a theoretical black box, 
+              I thrive on engineering concrete models that digest complex data and forecast outcomes with measurable precision.
+            </p>
+            <p>
+              I hold industry certifications including <strong>Microsoft Certified: Azure AI Fundamentals</strong> and 
+              <strong>Microsoft Certified: Azure Fundamentals</strong>, combined with hands-on internship training in 
+              <strong>Data Analytics at Thiranex</strong>. From diagnosing cardiovascular biomarkers to computing complex 
+              depreciation curves in automotive resale markets, I turn chaotic datasets into decisive intelligence.
+            </p>
+            <div class="spec-list">
+              <div class="spec-item">
+                <i class="fa-solid fa-graduation-cap spec-icon"></i>
+                <div>
+                  <strong>Degree:</strong> B.Tech in CSE with AI Specialization (Shoolini University)
+                </div>
+              </div>
+              <div class="spec-item">
+                <i class="fa-solid fa-certificate spec-icon"></i>
+                <div>
+                  <strong>Certifications:</strong> Microsoft Azure Fundamentals, Microsoft Azure AI Fundamentals, Thiranex Data Analytics
+                </div>
+              </div>
+              <div class="spec-item">
+                <i class="fa-solid fa-envelope spec-icon"></i>
+                <div>
+                  <strong>Email:</strong> satyamgarg132008@gmail.com
+                </div>
+              </div>
+              <div class="spec-item">
+                <i class="fa-solid fa-crosshairs spec-icon"></i>
+                <div>
+                  <strong>Focus:</strong> Predictive Machine Learning, Medical Diagnosis, Cloud AI Solutions
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-pillars">
+          <div class="pillar-card cyber-panel">
+            <div class="pillar-icon-box cyan">
+              <i class="fa-solid fa-cloud"></i>
+            </div>
+            <h3>Cloud & Azure AI</h3>
+            <p>Certified in deploying scalable AI workloads, cognitive services, computer vision, and cloud data architectures on Microsoft Azure.</p>
+          </div>
+
+          <div class="pillar-card cyber-panel">
+            <div class="pillar-icon-box purple">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3>Predictive Modeling</h3>
+            <p>Developing robust regression and multi-class classification models optimized for low variance and maximum generalization.</p>
+          </div>
+
+          <div class="pillar-card cyber-panel">
+            <div class="pillar-icon-box green">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <h3>Data Analytics & EDA</h3>
+            <p>Completed industry internship in data wrangling, exploratory data analysis, KPI visualization, and automated feature selection.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SHOWCASE -->
+    <section id="projects" class="projects-section container section-padding">
+      <div class="section-header">
+        <span class="section-tag">02 // DEPLOYED PIPELINES</span>
+        <h2 class="section-title">Engineered <span class="gradient-text">Machine Learning Projects</span></h2>
+        <p class="section-subtitle">Real-world AI architectures addressing predictive regression, medical healthcare diagnostics, and data analytics.</p>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <!-- PROJECT 1: CAR PRICE PREDICTION -->
+        <div class="project-card cyber-panel" data-tilt>
+          <div class="project-badge"><i class="fa-solid fa-car"></i> Regression Architecture</div>
+          <div class="project-preview-banner car-banner">
+            <div class="banner-overlay">
+              <div class="banner-metric">
+                <span class="metric-val">93.8%</span>
+                <span class="metric-name">R² Score Accuracy</span>
+              </div>
+              <div class="banner-icon-bg">
+                <i class="fa-solid fa-gauge-high"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-title">Car Sale Price Prediction Engine</h3>
+            <p class="project-desc">
+              End-to-end predictive machine learning model estimating used car market valuations based on vehicle age, odometer mileage, 
+              engine displacement, fuel efficiency, brand legacy, and transmission dynamics. Engineered with gradient boosting and regularized regression.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-point">
+                <i class="fa-solid fa-check text-cyan"></i> Feature transformation for non-linear depreciation curves
+              </div>
+              <div class="highlight-point">
+                <i class="fa-solid fa-check text-cyan"></i> Minimized Mean Absolute Error (MAE) through hyperparameter tuning
+              </div>
+              <div class="highlight-point">
+                <i class="fa-solid fa-check text-cyan"></i> Multicollinearity elimination using Variance Inflation Factor (VIF)
+              </div>
+            </div>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Scikit-Learn</span>
+              <span class="tech-pill">Random Forest</span>
+              <span class="tech-pill">Pandas</span>
+              <span class="tech-pill">Feature Scaling</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#simulators" class="btn btn-cyber-primary btn-sm">
+                <i class="fa-solid fa-play"></i> Test Interactive Model
+              </a>
+              <a href="https://github.com/satyamgarg132008-cyber" target="_blank" rel="noopener noreferrer" class="btn btn-cyber-secondary btn-sm">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 2: HEART DISEASE RISK CLASSIFIER -->
+        <div class="project-card cyber-panel" data-tilt>
+          <div class="project-badge"><i class="fa-solid fa-heart-pulse"></i> Clinical Diagnostics</div>
+          <div class="project-preview-banner heart-banner">
+            <div class="banner-overlay">
+              <div class="banner-metric">
+                <span class="metric-val">95.4%</span>
+                <span class="metric-name">Sensitivity / Recall</span>
+              </div>
+              <div class="banner-icon-bg">
+                <i class="fa-solid fa-heart-circle-bolt"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-title">Heart Disease Risk Classifier</h3>
+            <p class="project-desc">
+              Biomedical classification model trained on clinical patient indicators (resting blood pressure, serum cholesterol, 
+              ST depression, maximum heart rate, fasting blood sugar, and chest pain index) to identify coronary disease risk early.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-point">
+                <i class="fa-solid fa-check text-purple"></i> High recall optimization to aggressively prevent false negatives
+              </div>
+              <div class="highlight-point">
+                <i class="fa-solid fa-check text-purple"></i> Comparative analysis: Logistic Regression vs Support Vector Machine
+              </div>
+              <div class="highlight-point">
+                <i class="fa-solid fa-check text-purple"></i> Decision threshold calibration for healthcare safety tolerances
+              </div>
+            </div>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Clinical ML</span>
+              <span class="tech-pill">SVM</span>
+              <span class="tech-pill">ROC-AUC</span>
+              <span class="tech-pill">Seaborn Viz</span>
+            </div>
+
+            <div class="project-links">
+              <a href="#simulators" class="btn btn-cyber-primary btn-sm">
+                <i class="fa-solid fa-play"></i> Test Interactive Model
+              </a>
+              <a href="https://github.com/satyamgarg132008-cyber" target="_blank" rel="noopener noreferrer" class="btn btn-cyber-secondary btn-sm">
+                <i class="fa-brands fa-github"></i> Repository
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJECT 3: ADVANCED DATA EXPLORATION SUITE -->
+        <div class="project-card cyber-panel" data-tilt>
+          <div class="project-badge"><i class="fa-solid fa-chart-simple"></i> Analytics & Pipeline</div>
+          <div class="project-preview-banner data-banner">
+            <div class="banner-overlay">
+              <div class="banner-metric">
+                <span class="metric-val">100k+</span>
+                <span class="metric-name">Data Points Processed</span>
+              </div>
+              <div class="banner-icon-bg">
+                <i class="fa-solid fa-network-wired"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <h3 class="project-title">Autonomous Feature Analysis & EDA Lab</h3>
+            <p class="project-desc">
+              Automated data preprocessing and diagnostic framework developed alongside Thiranex internship training that analyzes raw multi-modal datasets, detects skewness, 
+              computes correlation matrices, detects outliers, and prepares normalized vectors for models.
+            </p>
+
+            <div class="project-highlights">
+              <div class="highlight-point">
+                <i class="fa-solid fa-check text-green"></i> Automated missing value imputation pipelines (KNN / Iterative)
+              </div>
+              <div class="highlight-point">
+                <i class="fa-solid fa-check text-green"></i> Dimensionality reduction via Principal Component Analysis (PCA)
+              </div>
+              <div class="highlight-point">
+                <i class="fa-solid fa-check text-green"></i> Clean modular object-oriented Python scripting
+              </div>
+            </div>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">NumPy</span>
+              <span class="tech-pill">Pandas</span>
+              <span class="tech-pill">PCA</span>
+              <span class="tech-pill">Matplotlib</span>
+              <span class="tech-pill">Data Pipelines</span>
+            </div>
+
+            <div class="project-links">
+              <a href="https://github.com/satyamgarg132008-cyber" target="_blank" rel="noopener noreferrer" class="btn btn-cyber-secondary btn-sm">
+                <i class="fa-brands fa-github"></i> Explore on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIVE INTERACTIVE ML SIMULATORS -->
+    <section id="simulators" class="simulators-section container section-padding">
+      <div class="section-header">
+        <span class="section-tag">03 // LIVE EXPERIMENTATION BENCH</span>
+        <h2 class="section-title">Interactive <span class="gradient-text">Machine Learning Simulators</span></h2>
+        <p class="section-subtitle">Don't just read about my models — adjust variables in real-time and observe the client-side predictive inference calculation engine!</p>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="simulators-wrapper">
+        <!-- SIMULATOR TABS -->
+        <div class="sim-tab-controls">
+          <button class="sim-tab-btn active" data-sim="car-sim">
+            <i class="fa-solid fa-car"></i> Car Valuation Regression Model
+          </button>
+          <button class="sim-tab-btn" data-sim="heart-sim">
+            <i class="fa-solid fa-heart-pulse"></i> Heart Disease Classifier Model
+          </button>
+        </div>
+
+        <!-- SIMULATOR 1: CAR PRICE -->
+        <div class="sim-panel active cyber-panel" id="car-sim">
+          <div class="sim-header">
+            <div>
+              <h3>Used Car Valuation Estimator (Regression Engine)</h3>
+              <p class="sim-sub">Calculates estimated resale value using polynomial depreciation, mileage penalty coefficients, and segment weighting.</p>
+            </div>
+            <div class="sim-engine-tag"><i class="fa-solid fa-bolt"></i> INFERENCE: 0.4ms</div>
+          </div>
+
+          <div class="sim-body-grid">
+            <div class="sim-inputs">
+              <!-- Input 1: Year -->
+              <div class="input-control">
+                <div class="input-meta">
+                  <label for="carYear">Manufacturing Year</label>
+                  <span class="val-display" id="carYearVal">2021</span>
+                </div>
+                <input type="range" id="carYear" min="2012" max="2024" value="2021" step="1" class="cyber-slider">
+                <div class="slider-ticks">
+                  <span>2012</span>
+                  <span>2018</span>
+                  <span>2024</span>
+                </div>
+              </div>
+
+              <!-- Input 2: Mileage -->
+              <div class="input-control">
+                <div class="input-meta">
+                  <label for="carKm">Kilometers Driven</label>
+                  <span class="val-display" id="carKmVal">35,000 km</span>
+                </div>
+                <input type="range" id="carKm" min="2000" max="180000" value="35000" step="1000" class="cyber-slider">
+                <div class="slider-ticks">
+                  <span>2k km</span>
+                  <span>90k km</span>
+                  <span>180k km</span>
+                </div>
+              </div>
+
+              <!-- Input 3: Engine Size -->
+              <div class="input-control">
+                <div class="input-meta">
+                  <label for="carEngine">Engine Displacement (CC)</label>
+                  <span class="val-display" id="carEngineVal">1500 cc</span>
+                </div>
+                <input type="range" id="carEngine" min="800" max="3500" value="1500" step="50" class="cyber-slider">
+                <div class="slider-ticks">
+                  <span>800 cc</span>
+                  <span>2000 cc</span>
+                  <span>3500 cc</span>
+                </div>
+              </div>
+
+              <!-- Input 4: Vehicle Segment -->
+              <div class="input-control">
+                <label>Vehicle Segment / Brand Class</label>
+                <div class="sim-pill-group" id="carSegmentGroup">
+                  <button type="button" class="sim-select-pill active" data-segment="1.0">Economy</button>
+                  <button type="button" class="sim-select-pill" data-segment="1.35">Sedan / Crossover</button>
+                  <button type="button" class="sim-select-pill" data-segment="1.85">SUV / Premium</button>
+                  <button type="button" class="sim-select-pill" data-segment="2.7">Luxury</button>
+                </div>
+              </div>
+
+              <!-- Input 5: Fuel Type -->
+              <div class="input-control">
+                <label>Fuel Type</label>
+                <div class="sim-pill-group" id="carFuelGroup">
+                  <button type="button" class="sim-select-pill active" data-fuel="petrol">Petrol</button>
+                  <button type="button" class="sim-select-pill" data-fuel="diesel">Diesel</button>
+                  <button type="button" class="sim-select-pill" data-fuel="cng">CNG</button>
+                  <button type="button" class="sim-select-pill" data-fuel="ev">EV / Hybrid</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sim-results">
+              <div class="results-card">
+                <div class="res-title">MODEL ESTIMATED VALUATION</div>
+                <div class="price-display-wrapper">
+                  <span class="currency-symbol">₹</span>
+                  <span class="calculated-price" id="carPredictedPrice">7,85,000</span>
+                </div>
+                <div class="confidence-indicator">
+                  <div class="conf-bar-track">
+                    <div class="conf-bar-fill" style="width: 93%;"></div>
+                  </div>
+                  <div class="conf-text">
+                    <span>Model Confidence Interval:</span>
+                    <span class="text-cyan font-bold">93.8% ± 3.2%</span>
+                  </div>
+                </div>
+
+                <div class="feature-weights-breakdown">
+                  <div class="breakdown-title">Feature Contribution Weights:</div>
+                  <div class="weight-row">
+                    <span>Age Depreciation Factor:</span>
+                    <span class="weight-tag text-purple" id="weightDepr">-18.4%</span>
+                  </div>
+                  <div class="weight-row">
+                    <span>Mileage Wear Curve:</span>
+                    <span class="weight-tag text-purple" id="weightMileage">-11.2%</span>
+                  </div>
+                  <div class="weight-row">
+                    <span>Engine Capacity Boost:</span>
+                    <span class="weight-tag text-green" id="weightEngine">+14.6%</span>
+                  </div>
+                  <div class="weight-row">
+                    <span>Segment Multiplier:</span>
+                    <span class="weight-tag text-cyan" id="weightSegment">1.0x</span>
+                  </div>
+                </div>
+
+                <div class="algo-note">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Simulating trained Scikit-Learn Random Forest Regressor tree weights in browser runtime.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SIMULATOR 2: HEART DISEASE -->
+        <div class="sim-panel cyber-panel" id="heart-sim">
+          <div class="sim-header">
+            <div>
+              <h3>Cardiovascular Risk Classifier (Clinical Probability)</h3>
+              <p class="sim-sub">Computes non-linear risk probability score based on key clinical cardiovascular biomarkers.</p>
+            </div>
+            <div class="sim-engine-tag"><i class="fa-solid fa-heart-pulse"></i> SENSITIVITY: 95.4%</div>
+          </div>
+
+          <div class="sim-body-grid">
+            <div class="sim-inputs">
+              <!-- Patient Age -->
+              <div class="input-control">
+                <div class="input-meta">
+                  <label for="heartAge">Patient Age</label>
+                  <span class="val-display" id="heartAgeVal">48 yrs</span>
+                </div>
+                <input type="range" id="heartAge" min="25" max="80" value="48" step="1" class="cyber-slider">
+                <div class="slider-ticks">
+                  <span>25 yrs</span>
+                  <span>52 yrs</span>
+                  <span>80 yrs</span>
+                </div>
+              </div>
+
+              <!-- Resting Blood Pressure -->
+              <div class="input-control">
+                <div class="input-meta">
+                  <label for="heartBp">Resting Blood Pressure (mm Hg)</label>
+                  <span class="val-display" id="heartBpVal">128 mm Hg</span>
+                </div>
+                <input type="range" id="heartBp" min="90" max="200" value="128" step="1" class="cyber-slider">
+                <div class="slider-ticks">
+                  <span>90 Normal</span>
+                  <span>140 Pre-Hypertension</span>
+                  <span>200 Severe</span>
+                </div>
+              </div>
+
+              <!-- Serum Cholesterol -->
+              <div class="input-control">
+                <div class="input-meta">
+                  <label for="heartChol">Serum Cholesterol (mg/dl)</label>
+                  <span class="val-display" id="heartCholVal">215 mg/dl</span>
+                </div>
+                <input type="range" id="heartChol" min="130" max="420" value="215" step="5" class="cyber-slider">
+                <div class="slider-ticks">
+                  <span>130 Optimal</span>
+                  <span>240 High</span>
+                  <span>420 Critical</span>
+                </div>
+              </div>
+
+              <!-- Max Heart Rate -->
+              <div class="input-control">
+                <div class="input-meta">
+                  <label for="heartMaxRate">Maximum Heart Rate Achieved (bpm)</label>
+                  <span class="val-display" id="heartMaxRateVal">155 bpm</span>
+                </div>
+                <input type="range" id="heartMaxRate" min="70" max="210" value="155" step="1" class="cyber-slider">
+                <div class="slider-ticks">
+                  <span>70 bpm</span>
+                  <span>140 bpm</span>
+                  <span>210 bpm</span>
+                </div>
+              </div>
+
+              <!-- Chest Pain Type -->
+              <div class="input-control">
+                <label>Chest Pain Level / Symptom Presentation</label>
+                <div class="sim-pill-group" id="heartPainGroup">
+                  <button type="button" class="sim-select-pill active" data-pain="0">Asymptomatic (0)</button>
+                  <button type="button" class="sim-select-pill" data-pain="1">Atypical Angina (1)</button>
+                  <button type="button" class="sim-select-pill" data-pain="2">Non-Anginal (2)</button>
+                  <button type="button" class="sim-select-pill" data-pain="3">Typical Angina (3)</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="sim-results">
+              <div class="results-card">
+                <div class="res-title">PREDICTED RISK CLASSIFICATION</div>
+                
+                <div class="risk-meter-wrapper">
+                  <div class="risk-gauge-circle" id="riskGaugeCircle">
+                    <svg viewBox="0 0 100 100" class="gauge-svg">
+                      <circle cx="50" cy="50" r="42" class="gauge-bg"></circle>
+                      <circle cx="50" cy="50" r="42" class="gauge-bar" id="gaugeBar"></circle>
+                    </svg>
+                    <div class="gauge-inner-val">
+                      <span class="gauge-percentage" id="heartRiskPercent">28%</span>
+                      <span class="gauge-label" id="heartRiskLevel">LOW RISK</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="clinical-recommendation" id="heartDiagnosisAdvice">
+                  <i class="fa-solid fa-notes-medical"></i>
+                  <span>Patient markers reside within moderate statistical control range. Regular lifestyle monitoring recommended.</span>
+                </div>
+
+                <div class="feature-weights-breakdown">
+                  <div class="breakdown-title">Diagnostic Influence Coefficients:</div>
+                  <div class="weight-row">
+                    <span>Blood Pressure Severity:</span>
+                    <span class="weight-tag" id="coefBp">+14%</span>
+                  </div>
+                  <div class="weight-row">
+                    <span>Cholesterol Saturation:</span>
+                    <span class="weight-tag" id="coefChol">+9%</span>
+                  </div>
+                  <div class="weight-row">
+                    <span>Heart Rate Resilience:</span>
+                    <span class="weight-tag text-green" id="coefHr">-12%</span>
+                  </div>
+                </div>
+
+                <div class="algo-note">
+                  <i class="fa-solid fa-shield-virus"></i>
+                  <span>Engineered with Logistic Regression sigmoid activation & Support Vector Machine margins.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEW SECTION: VERIFIED CERTIFICATIONS & ACCREDITATIONS -->
+    <section id="certificates" class="certificates-section container section-padding">
+      <div class="section-header">
+        <span class="section-tag">04 // VERIFIED CREDENTIALS</span>
+        <h2 class="section-title">Industry <span class="gradient-text">Certifications & Accreditations</span></h2>
+        <p class="section-subtitle">Verified credentials from Microsoft and industry internship programs demonstrating Cloud AI, Azure infrastructure, and Data Analytics competencies.</p>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="cert-grid">
+        <!-- CERTIFICATE 1: MICROSOFT AZURE AI FUNDAMENTALS -->
+        <div class="cert-card cyber-panel" data-tilt>
+          <div class="cert-card-badge text-cyan">
+            <i class="fa-solid fa-circle-check"></i> MICROSOFT CERTIFIED
+          </div>
+
+          <div class="cert-thumbnail-wrapper" onclick="openCertModal('assets/certificates/azure-ai-fundamentals.jpg', 'Microsoft Certified: Azure AI Fundamentals')">
+            <img src="assets/certificates/azure-ai-fundamentals.jpg" alt="Microsoft Certified Azure AI Fundamentals" class="cert-thumbnail-img" loading="lazy">
+            <div class="cert-hover-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span>Click to Expand Credential</span>
+            </div>
+          </div>
+
+          <div class="cert-content">
+            <div class="cert-issuer">
+              <i class="fa-brands fa-microsoft issuer-icon ms-color"></i>
+              <span>Microsoft</span>
+            </div>
+
+            <h3 class="cert-title">Azure AI Fundamentals</h3>
+            <p class="cert-desc">
+              Demonstrates foundational knowledge of machine learning, cognitive services, computer vision, natural language processing, and conversational AI workloads on Azure.
+            </p>
+
+            <div class="cert-meta-info">
+              <div class="meta-row">
+                <span class="meta-label">Verification Code:</span>
+                <span class="meta-val font-mono text-cyan">w6m7B-46DB</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Authority:</span>
+                <span class="meta-val">Certiport / Microsoft</span>
+              </div>
+            </div>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">Azure AI</span>
+              <span class="tech-pill">Machine Learning</span>
+              <span class="tech-pill">Computer Vision</span>
+              <span class="tech-pill">NLP</span>
+            </div>
+
+            <div class="cert-actions">
+              <button class="btn btn-cyber-primary btn-sm" onclick="openCertModal('assets/certificates/azure-ai-fundamentals.jpg', 'Microsoft Certified: Azure AI Fundamentals')">
+                <i class="fa-solid fa-eye"></i> View Certificate
+              </button>
+              <a href="https://verify.certiport.com" target="_blank" rel="noopener noreferrer" class="btn btn-cyber-secondary btn-sm" title="Verify on Certiport using code w6m7B-46DB">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CERTIFICATE 2: MICROSOFT AZURE FUNDAMENTALS -->
+        <div class="cert-card cyber-panel" data-tilt>
+          <div class="cert-card-badge text-cyan">
+            <i class="fa-solid fa-circle-check"></i> MICROSOFT CERTIFIED
+          </div>
+
+          <div class="cert-thumbnail-wrapper" onclick="openPdfModal('assets/certificates/azure-fundamentals.pdf', 'Microsoft Certified: Azure Fundamentals')">
+            <div class="cert-pdf-preview">
+              <i class="fa-brands fa-microsoft pdf-ms-icon"></i>
+              <div class="pdf-tag">Azure Fundamentals (AZ-900)</div>
+              <div class="pdf-sub">Issued: Sept 16, 2026 • Microsoft</div>
+            </div>
+            <div class="cert-hover-overlay">
+              <i class="fa-solid fa-file-pdf"></i>
+              <span>Click to View Official PDF</span>
+            </div>
+          </div>
+
+          <div class="cert-content">
+            <div class="cert-issuer">
+              <i class="fa-brands fa-microsoft issuer-icon ms-color"></i>
+              <span>Microsoft</span>
+            </div>
+
+            <h3 class="cert-title">Azure Fundamentals</h3>
+            <p class="cert-desc">
+              Validates fundamental knowledge of cloud computing architecture, Azure management tools, governance, security, compliance, network security, and cloud cost management.
+            </p>
+
+            <div class="cert-meta-info">
+              <div class="meta-row">
+                <span class="meta-label">Verification Code:</span>
+                <span class="meta-val font-mono text-cyan">nFDL-Dw8X</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Issued Date:</span>
+                <span class="meta-val">September 16, 2026</span>
+              </div>
+            </div>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">Cloud Architecture</span>
+              <span class="tech-pill">Azure Services</span>
+              <span class="tech-pill">Cloud Security</span>
+              <span class="tech-pill">Governance</span>
+            </div>
+
+            <div class="cert-actions">
+              <a href="assets/certificates/azure-fundamentals.pdf" target="_blank" class="btn btn-cyber-primary btn-sm">
+                <i class="fa-solid fa-file-pdf"></i> View Official PDF
+              </a>
+              <a href="https://verify.certiport.com" target="_blank" rel="noopener noreferrer" class="btn btn-cyber-secondary btn-sm" title="Verify on Certiport using code nFDL-Dw8X">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Verify
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CERTIFICATE 3: THIRANEX DATA ANALYTICS INTERNSHIP -->
+        <div class="cert-card cyber-panel" data-tilt>
+          <div class="cert-card-badge text-green">
+            <i class="fa-solid fa-briefcase"></i> INDUSTRY INTERNSHIP
+          </div>
+
+          <div class="cert-thumbnail-wrapper" onclick="openCertModal('assets/certificates/thiranex-data-analytics.jpg', 'Thiranex Data Analytics Internship Certificate')">
+            <img src="assets/certificates/thiranex-data-analytics.jpg" alt="Thiranex Data Analytics Internship" class="cert-thumbnail-img" loading="lazy">
+            <div class="cert-hover-overlay">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <span>Click to Expand Credential</span>
+            </div>
+          </div>
+
+          <div class="cert-content">
+            <div class="cert-issuer">
+              <i class="fa-solid fa-building issuer-icon text-green"></i>
+              <span>Thiranex (MSME Recognized)</span>
+            </div>
+
+            <h3 class="cert-title">Data Analytics Internship</h3>
+            <p class="cert-desc">
+              Successfully completed rigorous industry internship in Data Analytics. Specialized in exploratory data analysis (EDA), statistical pipelines, data cleansing, and predictive analytics.
+            </p>
+
+            <div class="cert-meta-info">
+              <div class="meta-row">
+                <span class="meta-label">Credential ID:</span>
+                <span class="meta-val font-mono text-green">THX-JUN1126-460</span>
+              </div>
+              <div class="meta-row">
+                <span class="meta-label">Internship Tenure:</span>
+                <span class="meta-val">11 Jun 2026 – 10 Jul 2026</span>
+              </div>
+            </div>
+
+            <div class="tech-stack-pills">
+              <span class="tech-pill">Data Analytics</span>
+              <span class="tech-pill">EDA</span>
+              <span class="tech-pill">Statistical Analysis</span>
+              <span class="tech-pill">Python Data Stack</span>
+            </div>
+
+            <div class="cert-actions">
+              <button class="btn btn-cyber-primary btn-sm" onclick="openCertModal('assets/certificates/thiranex-data-analytics.jpg', 'Thiranex Data Analytics Internship Certificate')">
+                <i class="fa-solid fa-eye"></i> View Certificate
+              </button>
+              <a href="https://github.com/satyamgarg132008-cyber" target="_blank" rel="noopener noreferrer" class="btn btn-cyber-secondary btn-sm">
+                <i class="fa-brands fa-github"></i> Project Work
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS MATRIX -->
+    <section id="skills" class="skills-section container section-padding">
+      <div class="section-header">
+        <span class="section-tag">05 // CAPABILITY SPECTRUM</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills & Toolchain</span></h2>
+        <p class="section-subtitle">Proficiencies cultivated through academic rigor at Shoolini University, Microsoft certifications, and real-world machine learning implementations.</p>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="skills-grid">
+        <!-- SKILL CATEGORY 1 -->
+        <div class="skill-category-card cyber-panel">
+          <div class="cat-header">
+            <i class="fa-solid fa-brain cat-icon cyan"></i>
+            <div>
+              <h3>Machine Learning & AI</h3>
+              <p>Predictive & Diagnostic Modeling</p>
+            </div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Supervised Learning (Regression & Classification)</span>
+                <span class="pct">92%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 92%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Scikit-Learn Ecosystem</span>
+                <span class="pct">90%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Feature Engineering & Selection</span>
+                <span class="pct">88%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Model Evaluation (ROC, RMSE, Confusion Matrix)</span>
+                <span class="pct">94%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 94%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Microsoft Azure AI Services</span>
+                <span class="pct">88%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 88%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SKILL CATEGORY 2 -->
+        <div class="skill-category-card cyber-panel">
+          <div class="cat-header">
+            <i class="fa-solid fa-code cat-icon purple"></i>
+            <div>
+              <h3>Programming & Core</h3>
+              <p>Computer Science Foundations</p>
+            </div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Python (OOP, Scripting, NumPy, Pandas)</span>
+                <span class="pct">95%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 95%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>C++ & Object-Oriented Principles</span>
+                <span class="pct">80%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Data Structures & Algorithmic Thinking</span>
+                <span class="pct">84%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 84%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>SQL & Relational Querying</span>
+                <span class="pct">78%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 78%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Modern Web Architecture (HTML5/CSS3/JS)</span>
+                <span class="pct">85%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SKILL CATEGORY 3 -->
+        <div class="skill-category-card cyber-panel">
+          <div class="cat-header">
+            <i class="fa-solid fa-toolbox cat-icon green"></i>
+            <div>
+              <h3>Data Science & Tooling</h3>
+              <p>Development & Analysis Workflow</p>
+            </div>
+          </div>
+          <div class="skill-items">
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Pandas & Data Wrangling</span>
+                <span class="pct">94%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 94%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Data Viz (Matplotlib, Seaborn)</span>
+                <span class="pct">90%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Microsoft Azure Cloud Infrastructure</span>
+                <span class="pct">86%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 86%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Git Version Control & GitHub Workflows</span>
+                <span class="pct">88%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 88%;"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info">
+                <span>Jupyter Notebooks & Google Colab</span>
+                <span class="pct">96%</span>
+              </div>
+              <div class="progress-track"><div class="progress-fill" style="width: 96%;"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Skills Tag Cloud -->
+      <div class="skills-tag-cloud">
+        <span class="cloud-tag"><i class="fa-brands fa-microsoft"></i> Microsoft Certified</span>
+        <span class="cloud-tag"><i class="fa-brands fa-python"></i> Python 3.x</span>
+        <span class="cloud-tag"><i class="fa-solid fa-cloud"></i> Azure Cloud</span>
+        <span class="cloud-tag"><i class="fa-solid fa-brain"></i> Azure AI</span>
+        <span class="cloud-tag"><i class="fa-solid fa-chart-line"></i> Data Analytics</span>
+        <span class="cloud-tag"><i class="fa-solid fa-cubes"></i> Random Forest</span>
+        <span class="cloud-tag"><i class="fa-solid fa-bolt"></i> Gradient Boosting</span>
+        <span class="cloud-tag"><i class="fa-solid fa-code-branch"></i> Git</span>
+        <span class="cloud-tag"><i class="fa-solid fa-network-wired"></i> Neural Networks</span>
+        <span class="cloud-tag"><i class="fa-solid fa-chart-area"></i> ROC Curves</span>
+        <span class="cloud-tag"><i class="fa-solid fa-database"></i> SQL</span>
+        <span class="cloud-tag"><i class="fa-solid fa-microchip"></i> Model Deployment</span>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE TERMINAL SECTION ("SATYAM OS") -->
+    <section id="terminal" class="terminal-section container section-padding">
+      <div class="section-header">
+        <span class="section-tag">06 // INTERACTIVE CONSOLE</span>
+        <h2 class="section-title">Satyam <span class="gradient-text">Neural CLI Terminal</span></h2>
+        <p class="section-subtitle">Interact with my portfolio through a Unix-style interactive command prompt. Type commands or click quick prompts below.</p>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="terminal-wrapper cyber-panel">
+        <div class="terminal-topbar">
+          <div class="terminal-buttons">
+            <span class="term-btn btn-close"></span>
+            <span class="term-btn btn-min"></span>
+            <span class="term-btn btn-max"></span>
+          </div>
+          <div class="terminal-title">satyam@shoolini-ai-kernel: ~ (bash)</div>
+          <div class="terminal-meta"><i class="fa-solid fa-circle text-green"></i> 60 FPS</div>
+        </div>
+
+        <div class="terminal-body" id="terminalOutput">
+          <div class="term-line term-welcome">
+            <span class="text-cyan">Satyam Chabba OS [Version 2.5.0-ai-certified]</span><br>
+            <span class="text-muted">(c) 2026 Satyam Chabba. Computer Science (AI) @ Shoolini University.</span><br>
+            Type <span class="text-green font-bold">'help'</span> or <span class="text-green font-bold">'certs'</span> to see verified credentials & commands.
+          </div>
+        </div>
+
+        <div class="terminal-input-row">
+          <span class="term-prompt">satyam@ai:~$</span>
+          <input type="text" id="terminalInput" class="term-input" autocomplete="off" spellcheck="false" placeholder="Type a command (e.g., 'certs', 'help', 'projects', 'about', 'predict')...">
+        </div>
+
+        <!-- Quick Command Chips for Fast Clicking -->
+        <div class="quick-commands">
+          <span class="quick-cmd-label">Quick Commands:</span>
+          <button class="quick-cmd-btn" data-cmd="certs">certs</button>
+          <button class="quick-cmd-btn" data-cmd="help">help</button>
+          <button class="quick-cmd-btn" data-cmd="about">about</button>
+          <button class="quick-cmd-btn" data-cmd="projects">projects</button>
+          <button class="quick-cmd-btn" data-cmd="skills">skills</button>
+          <button class="quick-cmd-btn" data-cmd="shoolini">shoolini</button>
+          <button class="quick-cmd-btn" data-cmd="contact">contact</button>
+          <button class="quick-cmd-btn" data-cmd="clear">clear</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & CONNECT SECTION -->
+    <section id="contact" class="contact-section container section-padding">
+      <div class="section-header">
+        <span class="section-tag">07 // INITIATE TRANSMISSION</span>
+        <h2 class="section-title">Let's Build <span class="gradient-text">Intelligent Futures</span></h2>
+        <p class="section-subtitle">Interested in collaborating on machine learning research, internships, or engineering problems? Drop me a transmission.</p>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Direct Channels -->
+        <div class="contact-channels">
+          <!-- Email Card -->
+          <div class="channel-card cyber-panel">
+            <div class="channel-icon cyan">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="channel-info">
+              <span class="channel-label">Direct Email</span>
+              <a href="mailto:satyamgarg132008@gmail.com" class="channel-val">satyamgarg132008@gmail.com</a>
+            </div>
+            <button class="copy-btn" id="copyEmailBtn" title="Copy Email to Clipboard" aria-label="Copy Email">
+              <i class="fa-regular fa-copy"></i>
+            </button>
+          </div>
+
+          <!-- GitHub Card -->
+          <div class="channel-card cyber-panel">
+            <div class="channel-icon purple">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="channel-info">
+              <span class="channel-label">GitHub Workspace</span>
+              <a href="https://github.com/satyamgarg132008-cyber" target="_blank" rel="noopener noreferrer" class="channel-val">satyamgarg132008-cyber</a>
+            </div>
+            <a href="https://github.com/satyamgarg132008-cyber" target="_blank" rel="noopener noreferrer" class="external-link-btn" aria-label="Visit GitHub">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="channel-card cyber-panel">
+            <div class="channel-icon blue">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="channel-info">
+              <span class="channel-label">LinkedIn Connection</span>
+              <a href="https://www.linkedin.com/in/satyam-chabba-8b3787396" target="_blank" rel="noopener noreferrer" class="channel-val">in/satyam-chabba-8b3787396</a>
+            </div>
+            <a href="https://www.linkedin.com/in/satyam-chabba-8b3787396" target="_blank" rel="noopener noreferrer" class="external-link-btn" aria-label="Visit LinkedIn">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+
+          <!-- University Card -->
+          <div class="channel-card cyber-panel">
+            <div class="channel-icon green">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="channel-info">
+              <span class="channel-label">Academic Campus</span>
+              <span class="channel-val">Shoolini University, Solan, HP, India</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Direct Message Dispatch Form -->
+        <div class="contact-form-wrapper cyber-panel">
+          <div class="panel-header">
+            <span class="terminal-dot"></span>
+            <span class="panel-title">DISPATCH_TRANSMISSION.sh</span>
+          </div>
+
+          <form id="contactForm" class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="senderName">Your Identity / Name</label>
+                <input type="text" id="senderName" required placeholder="e.g. Dr. Mentor / Recruiter" class="cyber-input">
+              </div>
+              <div class="form-group">
+                <label for="senderEmail">Your Email Address</label>
+                <input type="email" id="senderEmail" required placeholder="e.g. colleague@tech.com" class="cyber-input">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="messageSubject">Subject / Objective</label>
+              <input type="text" id="messageSubject" required placeholder="e.g. Machine Learning Internship / Research Collaboration" class="cyber-input">
+            </div>
+
+            <div class="form-group">
+              <label for="messageBody">Message Transmission</label>
+              <textarea id="messageBody" rows="5" required placeholder="Describe project requirements, questions, or opportunities..." class="cyber-input"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-cyber-primary btn-block">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Transmit Message (Opens Mail Client)</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- CERTIFICATE EXPAND MODAL -->
+  <div id="certModal" class="cert-modal">
+    <div class="cert-modal-backdrop" onclick="closeCertModal()"></div>
+    <div class="cert-modal-container cyber-panel">
+      <div class="modal-topbar">
+        <span class="modal-title" id="modalCertTitle">Certificate Preview</span>
+        <button class="modal-close-btn" onclick="closeCertModal()" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-image-body">
+        <img id="modalCertImage" src="" alt="Certificate" class="modal-img">
+      </div>
+      <div class="modal-footer">
+        <a id="modalDownloadBtn" href="" target="_blank" class="btn btn-cyber-primary btn-sm">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Full Resolution
+        </a>
+        <button class="btn btn-cyber-secondary btn-sm" onclick="closeCertModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer-wrapper">
+    <div class="footer-content container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-text">SC</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-quote">
+          "Transforming raw multidimensional vectors into intelligent real-world predictions."
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <div class="sys-status">
+          <span class="pulse-green"></span>
+          <span>SYSTEMS NORMAL • MICROSOFT CERTIFIED • SHOOLINI CSE-AI</span>
+        </div>
+        <p class="copyright-text">
+          &copy; <span id="currentYear"></span> Satyam Chabba. Crafted with high-precision engineering.
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <div class="social-links">
+          <a href="https://github.com/satyamgarg132008-cyber" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/satyam-chabba-8b3787396" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:satyamgarg132008@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
